@@ -34,6 +34,7 @@ namespace PasswordManager
             this.beendenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnControl = new System.Windows.Forms.Panel();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.flPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -43,7 +44,7 @@ namespace PasswordManager
             this.dateiToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(884, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -63,9 +64,11 @@ namespace PasswordManager
             // 
             // pnControl
             // 
-            this.pnControl.Location = new System.Drawing.Point(141, 27);
+            this.pnControl.AutoSize = true;
+            this.pnControl.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnControl.Location = new System.Drawing.Point(884, 24);
             this.pnControl.Name = "pnControl";
-            this.pnControl.Size = new System.Drawing.Size(647, 411);
+            this.pnControl.Size = new System.Drawing.Size(0, 426);
             this.pnControl.TabIndex = 1;
             // 
             // btnAdd
@@ -78,11 +81,21 @@ namespace PasswordManager
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // flPanel
+            // 
+            this.flPanel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.flPanel.Location = new System.Drawing.Point(141, 24);
+            this.flPanel.Name = "flPanel";
+            this.flPanel.Size = new System.Drawing.Size(743, 426);
+            this.flPanel.TabIndex = 3;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(884, 450);
+            this.Controls.Add(this.flPanel);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.pnControl);
             this.Controls.Add(this.menuStrip1);
@@ -103,6 +116,7 @@ namespace PasswordManager
         private System.Windows.Forms.ToolStripMenuItem beendenToolStripMenuItem;
         private System.Windows.Forms.Panel pnControl;        
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.FlowLayoutPanel flPanel;
     }
 
 }
