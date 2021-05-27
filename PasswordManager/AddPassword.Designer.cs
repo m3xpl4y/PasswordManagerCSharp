@@ -39,32 +39,33 @@ namespace PasswordManager
             this.lblPassword = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.lblID = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtTitle
             // 
-            this.txtTitle.Location = new System.Drawing.Point(167, 3);
+            this.txtTitle.Location = new System.Drawing.Point(170, 23);
             this.txtTitle.Name = "txtTitle";
             this.txtTitle.Size = new System.Drawing.Size(205, 23);
             this.txtTitle.TabIndex = 0;
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(167, 32);
+            this.txtUsername.Location = new System.Drawing.Point(170, 52);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(205, 23);
             this.txtUsername.TabIndex = 0;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(167, 62);
+            this.txtPassword.Location = new System.Drawing.Point(170, 82);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(205, 23);
             this.txtPassword.TabIndex = 0;
             // 
             // txtWebsite
             // 
-            this.txtWebsite.Location = new System.Drawing.Point(167, 91);
+            this.txtWebsite.Location = new System.Drawing.Point(170, 111);
             this.txtWebsite.Name = "txtWebsite";
             this.txtWebsite.Size = new System.Drawing.Size(205, 23);
             this.txtWebsite.TabIndex = 0;
@@ -72,7 +73,7 @@ namespace PasswordManager
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
-            this.lblTitle.Location = new System.Drawing.Point(3, 6);
+            this.lblTitle.Location = new System.Drawing.Point(6, 26);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(29, 15);
             this.lblTitle.TabIndex = 1;
@@ -81,7 +82,7 @@ namespace PasswordManager
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
-            this.lblUsername.Location = new System.Drawing.Point(3, 35);
+            this.lblUsername.Location = new System.Drawing.Point(6, 55);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(60, 15);
             this.lblUsername.TabIndex = 1;
@@ -90,7 +91,7 @@ namespace PasswordManager
             // lblWebsite
             // 
             this.lblWebsite.AutoSize = true;
-            this.lblWebsite.Location = new System.Drawing.Point(3, 94);
+            this.lblWebsite.Location = new System.Drawing.Point(6, 114);
             this.lblWebsite.Name = "lblWebsite";
             this.lblWebsite.Size = new System.Drawing.Size(49, 15);
             this.lblWebsite.TabIndex = 1;
@@ -99,7 +100,7 @@ namespace PasswordManager
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(3, 65);
+            this.lblPassword.Location = new System.Drawing.Point(6, 85);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(54, 15);
             this.lblPassword.TabIndex = 1;
@@ -107,7 +108,7 @@ namespace PasswordManager
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(206, 120);
+            this.btnCancel.Location = new System.Drawing.Point(209, 140);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(80, 25);
             this.btnCancel.TabIndex = 2;
@@ -117,13 +118,23 @@ namespace PasswordManager
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(292, 120);
+            this.btnAdd.Location = new System.Drawing.Point(295, 140);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(80, 25);
             this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "Hinzufügen";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // lblID
+            // 
+            this.lblID.AutoSize = true;
+            this.lblID.Location = new System.Drawing.Point(170, 5);
+            this.lblID.Name = "lblID";
+            this.lblID.Size = new System.Drawing.Size(18, 15);
+            this.lblID.TabIndex = 1;
+            this.lblID.Text = "ID";
+            this.lblID.Visible = false;
             // 
             // AddPassword
             // 
@@ -134,13 +145,14 @@ namespace PasswordManager
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblWebsite);
             this.Controls.Add(this.lblUsername);
+            this.Controls.Add(this.lblID);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.txtWebsite);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.txtTitle);
             this.Name = "AddPassword";
-            this.Size = new System.Drawing.Size(378, 157);
+            this.Size = new System.Drawing.Size(378, 171);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -158,5 +170,6 @@ namespace PasswordManager
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Label lblID;
     }
 }
