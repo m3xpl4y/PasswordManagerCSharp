@@ -49,7 +49,6 @@ namespace PasswordManager
 
             LoadEntriesList lel = new LoadEntriesList();
             List<PasswortListUI> passwortLists = lel.passwortListUIs(entries);
-
             foreach (var item in passwortLists)
             {
                 flPanel.Controls.Add(item);

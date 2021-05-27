@@ -42,7 +42,17 @@ namespace PasswordManager
             txtPassword.Text = "";
             txtWebsite.Text = "";
             #endregion
-            GetLayoutPanel().Controls.Clear();
+
+            //GetLayoutPanel().Controls.Clear();
+            LoadPasswordList lpl = new LoadPasswordList();
+            List<EntryData> entries = lpl.EntryDataList();
+
+            LoadEntriesList lel = new LoadEntriesList();
+            List<PasswortListUI> passwortLists = lel.passwortListUIs(entries);
+            foreach (var item in passwortLists)
+            {
+                GetLayoutPanel().Controls.Add(item);
+            }
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -69,7 +79,7 @@ namespace PasswordManager
         }
         private FlowLayoutPanel GetLayoutPanel()
         {
-            FlowLayoutPanel flp = this.Parent as FlowLayoutPanel;
+            var flp = this.Parent as FlowLayoutPanel;
             return flp;
         }
     }
