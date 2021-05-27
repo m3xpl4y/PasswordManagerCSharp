@@ -33,6 +33,10 @@ namespace PasswordManager
             this.dateiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.neuesPasswortHinzufügenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.beendenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.einstellungenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ansichtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.neuesPasswortToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.meinePasswörterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnControl = new System.Windows.Forms.Panel();
             this.btnAdd = new System.Windows.Forms.Button();
             this.flPanel = new System.Windows.Forms.FlowLayoutPanel();
@@ -43,7 +47,8 @@ namespace PasswordManager
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.dateiToolStripMenuItem});
+            this.dateiToolStripMenuItem,
+            this.ansichtToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(884, 24);
@@ -54,6 +59,7 @@ namespace PasswordManager
             // 
             this.dateiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.neuesPasswortHinzufügenToolStripMenuItem,
+            this.einstellungenToolStripMenuItem,
             this.beendenToolStripMenuItem});
             this.dateiToolStripMenuItem.Name = "dateiToolStripMenuItem";
             this.dateiToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
@@ -61,6 +67,7 @@ namespace PasswordManager
             // 
             // neuesPasswortHinzufügenToolStripMenuItem
             // 
+            this.neuesPasswortHinzufügenToolStripMenuItem.MergeIndex = 1;
             this.neuesPasswortHinzufügenToolStripMenuItem.Name = "neuesPasswortHinzufügenToolStripMenuItem";
             this.neuesPasswortHinzufügenToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.neuesPasswortHinzufügenToolStripMenuItem.Text = "Neues Passwort";
@@ -68,9 +75,39 @@ namespace PasswordManager
             // 
             // beendenToolStripMenuItem
             // 
+            this.beendenToolStripMenuItem.MergeIndex = 3;
             this.beendenToolStripMenuItem.Name = "beendenToolStripMenuItem";
+            this.beendenToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
             this.beendenToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.beendenToolStripMenuItem.Text = "Beenden";
+            // 
+            // einstellungenToolStripMenuItem
+            // 
+            this.einstellungenToolStripMenuItem.MergeIndex = 2;
+            this.einstellungenToolStripMenuItem.Name = "einstellungenToolStripMenuItem";
+            this.einstellungenToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.einstellungenToolStripMenuItem.Text = "Einstellungen";
+            // 
+            // ansichtToolStripMenuItem
+            // 
+            this.ansichtToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.neuesPasswortToolStripMenuItem,
+            this.meinePasswörterToolStripMenuItem});
+            this.ansichtToolStripMenuItem.Name = "ansichtToolStripMenuItem";
+            this.ansichtToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+            this.ansichtToolStripMenuItem.Text = "Ansicht";
+            // 
+            // neuesPasswortToolStripMenuItem
+            // 
+            this.neuesPasswortToolStripMenuItem.Name = "neuesPasswortToolStripMenuItem";
+            this.neuesPasswortToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.neuesPasswortToolStripMenuItem.Text = "Neues Passwort";
+            // 
+            // meinePasswörterToolStripMenuItem
+            // 
+            this.meinePasswörterToolStripMenuItem.Name = "meinePasswörterToolStripMenuItem";
+            this.meinePasswörterToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.meinePasswörterToolStripMenuItem.Text = "Meine Passwörter";
             // 
             // pnControl
             // 
@@ -140,6 +177,10 @@ namespace PasswordManager
         private System.Windows.Forms.ToolStripMenuItem neuesPasswortHinzufügenToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem beendenToolStripMenuItem;
         private System.Windows.Forms.Button btnMenu;
+        private System.Windows.Forms.ToolStripMenuItem einstellungenToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ansichtToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem neuesPasswortToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem meinePasswörterToolStripMenuItem;
     }
 
 }

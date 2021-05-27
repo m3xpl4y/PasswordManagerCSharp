@@ -19,6 +19,7 @@ namespace PasswordManager
         {
             InitializeComponent();
             LoadList();
+            LoadPasswordList lpl = new LoadPasswordList();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)

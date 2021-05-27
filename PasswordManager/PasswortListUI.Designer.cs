@@ -39,7 +39,7 @@ namespace PasswordManager
             // lblID
             // 
             this.lblID.AutoSize = true;
-            this.lblID.Location = new System.Drawing.Point(5, 7);
+            this.lblID.Location = new System.Drawing.Point(7, 6);
             this.lblID.Name = "lblID";
             this.lblID.Size = new System.Drawing.Size(18, 15);
             this.lblID.TabIndex = 0;
@@ -47,7 +47,7 @@ namespace PasswordManager
             // 
             // txtTitle
             // 
-            this.txtTitle.Location = new System.Drawing.Point(49, 4);
+            this.txtTitle.Location = new System.Drawing.Point(51, 3);
             this.txtTitle.Name = "txtTitle";
             this.txtTitle.ReadOnly = true;
             this.txtTitle.Size = new System.Drawing.Size(160, 23);
@@ -55,7 +55,7 @@ namespace PasswordManager
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(215, 4);
+            this.txtUsername.Location = new System.Drawing.Point(217, 3);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.ReadOnly = true;
             this.txtUsername.Size = new System.Drawing.Size(160, 23);
@@ -63,7 +63,7 @@ namespace PasswordManager
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(381, 4);
+            this.txtPassword.Location = new System.Drawing.Point(383, 3);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.ReadOnly = true;
             this.txtPassword.Size = new System.Drawing.Size(160, 23);
@@ -71,7 +71,7 @@ namespace PasswordManager
             // 
             // txtWebsite
             // 
-            this.txtWebsite.Location = new System.Drawing.Point(547, 4);
+            this.txtWebsite.Location = new System.Drawing.Point(549, 3);
             this.txtWebsite.Name = "txtWebsite";
             this.txtWebsite.ReadOnly = true;
             this.txtWebsite.Size = new System.Drawing.Size(160, 23);
@@ -87,7 +87,7 @@ namespace PasswordManager
             this.Controls.Add(this.txtTitle);
             this.Controls.Add(this.lblID);
             this.Name = "PasswortListUI";
-            this.Size = new System.Drawing.Size(712, 32);
+            this.Size = new System.Drawing.Size(712, 28);
             this.ResumeLayout(false);
             this.PerformLayout();
 
