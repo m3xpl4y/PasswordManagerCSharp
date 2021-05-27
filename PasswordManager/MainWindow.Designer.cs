@@ -1,7 +1,7 @@
 ﻿
 namespace PasswordManager
 {
-    partial class Form1
+    partial class MainWindow
     {
         /// <summary>
         ///  Required designer variable.
@@ -31,10 +31,11 @@ namespace PasswordManager
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.dateiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.beendenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnControl = new System.Windows.Forms.Panel();
             this.btnAdd = new System.Windows.Forms.Button();
             this.flPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.neuesPasswortHinzufügenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.beendenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,16 +52,11 @@ namespace PasswordManager
             // dateiToolStripMenuItem
             // 
             this.dateiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.neuesPasswortHinzufügenToolStripMenuItem,
             this.beendenToolStripMenuItem});
             this.dateiToolStripMenuItem.Name = "dateiToolStripMenuItem";
             this.dateiToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
             this.dateiToolStripMenuItem.Text = "Datei";
-            // 
-            // beendenToolStripMenuItem
-            // 
-            this.beendenToolStripMenuItem.Name = "beendenToolStripMenuItem";
-            this.beendenToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
-            this.beendenToolStripMenuItem.Text = "Beenden";
             // 
             // pnControl
             // 
@@ -77,7 +73,7 @@ namespace PasswordManager
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(135, 23);
             this.btnAdd.TabIndex = 2;
-            this.btnAdd.Text = "Add Control";
+            this.btnAdd.Text = "Neues Passwort";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
@@ -89,7 +85,19 @@ namespace PasswordManager
             this.flPanel.Size = new System.Drawing.Size(743, 426);
             this.flPanel.TabIndex = 3;
             // 
-            // Form1
+            // neuesPasswortHinzufügenToolStripMenuItem
+            // 
+            this.neuesPasswortHinzufügenToolStripMenuItem.Name = "neuesPasswortHinzufügenToolStripMenuItem";
+            this.neuesPasswortHinzufügenToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.neuesPasswortHinzufügenToolStripMenuItem.Text = "Neues Passwort";
+            // 
+            // beendenToolStripMenuItem
+            // 
+            this.beendenToolStripMenuItem.Name = "beendenToolStripMenuItem";
+            this.beendenToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.beendenToolStripMenuItem.Text = "Beenden";
+            // 
+            // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -100,8 +108,8 @@ namespace PasswordManager
             this.Controls.Add(this.pnControl);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "MainWindow";
+            this.Text = "Password Manager Pro";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -113,10 +121,11 @@ namespace PasswordManager
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem dateiToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem beendenToolStripMenuItem;
         private System.Windows.Forms.Panel pnControl;        
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.FlowLayoutPanel flPanel;
+        private System.Windows.Forms.ToolStripMenuItem neuesPasswortHinzufügenToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem beendenToolStripMenuItem;
     }
 
 }
