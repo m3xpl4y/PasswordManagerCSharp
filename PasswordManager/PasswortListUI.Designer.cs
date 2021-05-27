@@ -49,6 +49,7 @@ namespace PasswordManager
             // 
             this.txtTitle.Location = new System.Drawing.Point(49, 4);
             this.txtTitle.Name = "txtTitle";
+            this.txtTitle.ReadOnly = true;
             this.txtTitle.Size = new System.Drawing.Size(160, 23);
             this.txtTitle.TabIndex = 1;
             // 
@@ -56,6 +57,7 @@ namespace PasswordManager
             // 
             this.txtUsername.Location = new System.Drawing.Point(215, 4);
             this.txtUsername.Name = "txtUsername";
+            this.txtUsername.ReadOnly = true;
             this.txtUsername.Size = new System.Drawing.Size(160, 23);
             this.txtUsername.TabIndex = 2;
             // 
@@ -63,6 +65,7 @@ namespace PasswordManager
             // 
             this.txtPassword.Location = new System.Drawing.Point(381, 4);
             this.txtPassword.Name = "txtPassword";
+            this.txtPassword.ReadOnly = true;
             this.txtPassword.Size = new System.Drawing.Size(160, 23);
             this.txtPassword.TabIndex = 3;
             // 
@@ -70,6 +73,7 @@ namespace PasswordManager
             // 
             this.txtWebsite.Location = new System.Drawing.Point(547, 4);
             this.txtWebsite.Name = "txtWebsite";
+            this.txtWebsite.ReadOnly = true;
             this.txtWebsite.Size = new System.Drawing.Size(160, 23);
             this.txtWebsite.TabIndex = 4;
             // 

@@ -44,28 +44,28 @@ namespace PasswordManager
             // 
             // txtTitle
             // 
-            this.txtTitle.Location = new System.Drawing.Point(170, 23);
+            this.txtTitle.Location = new System.Drawing.Point(170, 3);
             this.txtTitle.Name = "txtTitle";
             this.txtTitle.Size = new System.Drawing.Size(205, 23);
             this.txtTitle.TabIndex = 0;
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(170, 52);
+            this.txtUsername.Location = new System.Drawing.Point(170, 32);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(205, 23);
             this.txtUsername.TabIndex = 0;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(170, 82);
+            this.txtPassword.Location = new System.Drawing.Point(170, 62);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(205, 23);
             this.txtPassword.TabIndex = 0;
             // 
             // txtWebsite
             // 
-            this.txtWebsite.Location = new System.Drawing.Point(170, 111);
+            this.txtWebsite.Location = new System.Drawing.Point(170, 91);
             this.txtWebsite.Name = "txtWebsite";
             this.txtWebsite.Size = new System.Drawing.Size(205, 23);
             this.txtWebsite.TabIndex = 0;
@@ -73,7 +73,7 @@ namespace PasswordManager
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
-            this.lblTitle.Location = new System.Drawing.Point(6, 26);
+            this.lblTitle.Location = new System.Drawing.Point(6, 6);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(29, 15);
             this.lblTitle.TabIndex = 1;
@@ -82,7 +82,7 @@ namespace PasswordManager
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
-            this.lblUsername.Location = new System.Drawing.Point(6, 55);
+            this.lblUsername.Location = new System.Drawing.Point(6, 35);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(60, 15);
             this.lblUsername.TabIndex = 1;
@@ -91,7 +91,7 @@ namespace PasswordManager
             // lblWebsite
             // 
             this.lblWebsite.AutoSize = true;
-            this.lblWebsite.Location = new System.Drawing.Point(6, 114);
+            this.lblWebsite.Location = new System.Drawing.Point(6, 94);
             this.lblWebsite.Name = "lblWebsite";
             this.lblWebsite.Size = new System.Drawing.Size(49, 15);
             this.lblWebsite.TabIndex = 1;
@@ -100,7 +100,7 @@ namespace PasswordManager
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(6, 85);
+            this.lblPassword.Location = new System.Drawing.Point(6, 65);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(54, 15);
             this.lblPassword.TabIndex = 1;
@@ -108,7 +108,7 @@ namespace PasswordManager
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(209, 140);
+            this.btnCancel.Location = new System.Drawing.Point(209, 120);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(80, 25);
             this.btnCancel.TabIndex = 2;
@@ -118,7 +118,7 @@ namespace PasswordManager
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(295, 140);
+            this.btnAdd.Location = new System.Drawing.Point(295, 120);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(80, 25);
             this.btnAdd.TabIndex = 2;
@@ -129,7 +129,7 @@ namespace PasswordManager
             // lblID
             // 
             this.lblID.AutoSize = true;
-            this.lblID.Location = new System.Drawing.Point(170, 5);
+            this.lblID.Location = new System.Drawing.Point(170, 120);
             this.lblID.Name = "lblID";
             this.lblID.Size = new System.Drawing.Size(18, 15);
             this.lblID.TabIndex = 1;

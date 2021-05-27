@@ -45,7 +45,10 @@ namespace PasswordManager
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-           
+            txtTitle.Text = "";
+            txtUsername.Text = "";
+            txtPassword.Text = "";
+            txtWebsite.Text = "";
         }
         private int lastId()
         {
