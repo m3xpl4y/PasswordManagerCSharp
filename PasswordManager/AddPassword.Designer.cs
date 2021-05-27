@@ -54,21 +54,21 @@ namespace PasswordManager
             this.txtUsername.Location = new System.Drawing.Point(170, 32);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(205, 23);
-            this.txtUsername.TabIndex = 0;
+            this.txtUsername.TabIndex = 1;
             // 
             // txtPassword
             // 
             this.txtPassword.Location = new System.Drawing.Point(170, 62);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(205, 23);
-            this.txtPassword.TabIndex = 0;
+            this.txtPassword.TabIndex = 2;
             // 
             // txtWebsite
             // 
             this.txtWebsite.Location = new System.Drawing.Point(170, 91);
             this.txtWebsite.Name = "txtWebsite";
             this.txtWebsite.Size = new System.Drawing.Size(205, 23);
-            this.txtWebsite.TabIndex = 0;
+            this.txtWebsite.TabIndex = 3;
             // 
             // lblTitle
             // 
@@ -111,7 +111,7 @@ namespace PasswordManager
             this.btnCancel.Location = new System.Drawing.Point(209, 120);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(80, 25);
-            this.btnCancel.TabIndex = 2;
+            this.btnCancel.TabIndex = 5;
             this.btnCancel.Text = "Abbrechen";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
@@ -121,7 +121,7 @@ namespace PasswordManager
             this.btnAdd.Location = new System.Drawing.Point(295, 120);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(80, 25);
-            this.btnAdd.TabIndex = 2;
+            this.btnAdd.TabIndex = 4;
             this.btnAdd.Text = "Hinzufügen";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
