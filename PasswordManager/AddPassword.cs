@@ -23,12 +23,15 @@ namespace PasswordManager
             int id = lastId();
             List<string> output = new List<string>();
             var ed = new EntryData();
+
             ed.ID = id.ToString();
             ed.Title = txtTitle.Text;
             ed.Username = txtUsername.Text;
             ed.Password = txtPassword.Text;
             ed.Website = txtWebsite.Text;
+            
             string entry = $"{ed.ID},{ed.Title},{ed.Username},{ed.Password},{ed.Website}";
+            
             output.Add(entry);
 
             File.AppendAllLines(EnvironmentPath.FilePath, output);
@@ -39,6 +42,7 @@ namespace PasswordManager
             txtPassword.Text = "";
             txtWebsite.Text = "";
             #endregion
+            GetLayoutPanel().Controls.Clear();
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -62,6 +66,11 @@ namespace PasswordManager
             }
             id++;
             return id;
+        }
+        private FlowLayoutPanel GetLayoutPanel()
+        {
+            FlowLayoutPanel flp = this.Parent as FlowLayoutPanel;
+            return flp;
         }
     }
 }

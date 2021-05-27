@@ -152,7 +152,7 @@ namespace PasswordManager
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.txtTitle);
             this.Name = "AddPassword";
-            this.Size = new System.Drawing.Size(378, 171);
+            this.Size = new System.Drawing.Size(378, 149);
             this.ResumeLayout(false);
             this.PerformLayout();
 
