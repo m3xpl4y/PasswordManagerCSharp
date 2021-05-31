@@ -40,6 +40,7 @@ namespace PasswordManager
             this.btnAdd = new System.Windows.Forms.Button();
             this.flPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.btnMenu = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -137,12 +138,23 @@ namespace PasswordManager
             this.btnMenu.UseVisualStyleBackColor = true;
             this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(12, 92);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(884, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.flPanel);
             this.Controls.Add(this.btnAdd);
@@ -170,6 +182,7 @@ namespace PasswordManager
         private System.Windows.Forms.ToolStripMenuItem ansichtToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem neuesPasswortToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem meinePasswörterToolStripMenuItem;
+        private System.Windows.Forms.Button button1;
     }
 
 }

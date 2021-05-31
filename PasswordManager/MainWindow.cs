@@ -23,7 +23,7 @@ namespace PasswordManager
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            flPanel.Controls.Clear();
+            flPanel.Controls.Clear(); // Neues Passwort
             AddPassword ap = new AddPassword();
             flPanel.Controls.Add(ap);
         }
@@ -37,13 +37,12 @@ namespace PasswordManager
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
-            LoadList();
+            LoadList(); //Meine Passwörter
         }
         private void LoadList()
         {
             flPanel.Controls.Clear();
             
-
             LoadPasswordList lpl = new LoadPasswordList();
             List<EntryData> entries = lpl.EntryDataList();
 
@@ -53,6 +52,11 @@ namespace PasswordManager
             {
                 flPanel.Controls.Add(item);
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            flPanel.Controls.Clear();
         }
     }
 }

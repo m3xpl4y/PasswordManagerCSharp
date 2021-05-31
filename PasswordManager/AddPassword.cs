@@ -20,6 +20,7 @@ namespace PasswordManager
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            //GetLayoutPanel().Controls.Clear();
             int id = lastId();
             List<string> output = new List<string>();
             var ed = new EntryData();
@@ -33,7 +34,7 @@ namespace PasswordManager
             string entry = $"{ed.ID},{ed.Title},{ed.Username},{ed.Password},{ed.Website}";
             
             output.Add(entry);
-
+            
             File.AppendAllLines(EnvironmentPath.FilePath, output);
 
             #region CLEAR TEXT FIELDS
@@ -43,16 +44,20 @@ namespace PasswordManager
             txtWebsite.Text = "";
             #endregion
 
-            //GetLayoutPanel().Controls.Clear();
-            LoadPasswordList lpl = new LoadPasswordList();
-            List<EntryData> entries = lpl.EntryDataList();
 
-            LoadEntriesList lel = new LoadEntriesList();
-            List<PasswortListUI> passwortLists = lel.passwortListUIs(entries);
-            foreach (var item in passwortLists)
-            {
-                GetLayoutPanel().Controls.Add(item);
-            }
+            //LoadPasswordList lpl = new LoadPasswordList();
+            //List<EntryData> entries = lpl.EntryDataList();
+
+            //LoadEntriesList lel = new LoadEntriesList();
+            //List<PasswortListUI> passwortLists = lel.passwortListUIs(entries);
+
+
+            //foreach (var item in passwortLists)
+            //{
+            //    GetLayoutPanel().Controls.Add(item);
+            //}
+
+
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
